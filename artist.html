@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <style type="text/css">
+    *{
+        box-sizing: border-box;
+     }
+
+  body{
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial;
+      }
+
+/* Center website */
+  .main{
+          max-width: 1000px;
+          margin: auto;
+       }
+
+  h1{
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+  .row{
+        margin: 10px -16px;
+      }
+
+/* Add padding BETWEEN each column */
+  .row, .row > .column{        
+                        padding: 8px;
+                      }
+
+/* Create three equal columns that floats next to each other */
+  .column{
+            float: left;
+            width: 33.33%;  
+            display: none; /* Hide all elements by default */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         }
+  .column:hover{
+                  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+               }
+
+/* Clear floats after rows */ 
+  .row:after{
+              content: "";
+              display: table;
+              clear: both;
+  }
+
+/* Content */
+  .content{
+            background-color: white;
+            padding: 10px;
+          }
+  .content img{
+                height:320px;
+              }
+/* The "show" class is added to the filtered elements */
+  .show{
+          display: block;
+       }
+
+/* Style the buttons */
+  .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer;
+  }
+
+  .btn:hover{
+              background-color: #ddd;
+            }
+
+  .btn.active{
+                background-color: #666;
+                color: white;
+             }
+  .videoContainer{
+                    display: inline-flex;
+                 }
+  .ytplayer{
+              margin:1px;
+           }
+</style>
+<!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h1>藝術家</h1>
+    <hr/>
+
+
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> 全部</button>
+    <button class="btn" onclick="filterSelection('taiwan')"> 台灣</button>
+    <button class="btn" onclick="filterSelection('china')"> 中國</button>
+    <button class="btn" onclick="filterSelection('western')"> 西洋</button>
+  </div>
+
+<!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column taiwan">
+      <div class="content">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvSwxZN7_8qc9SGDdhO8K3_-vjq8fwL1aniA&usqp=CAU" alt="" style="width:100%">
+        <h4>陳澄波</h4>
+        <p>1895 ~ 1947</p>
+      </div>
+    </div>
+  <div class="column taiwan">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRN7QnCj_7Xxe8-D0YgDmyVAww8oxvB4K50gA&usqp=CAU" alt="" style="width:100%">
+      <h4>劉啟祥</h4>
+      <p>1910 ~ 1998</p>
+    </div>
+  </div>
+  <div class="column taiwan">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJC9Mwctm6zL4pon5MWM38Mm-KUrUDqVNnCg&usqp=CAU" alt="" style="width:100%">
+      <h4>顏水龍</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!--   china -->
+  <div class="column china">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4DeglWZdSb15vY3lwenYD1RR9dtDWtWOHbA&usqp=CAU" alt="" style="width:100%">
+      <h4>齊白石</h4>
+      <p>1864 ~ 1957</p>
+    </div>
+  </div>
+  <div class="column china">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRElHoeJm3OH9ZNbZgV0cCqqhAWUM15jHgIxw&usqp=CAU" alt="" style="width:100%">
+      <h4>徐悲鴻</h4>
+      <p>1895 ~ 1953</p>
+    </div>
+  </div>
+  <div class="column china">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRdH73oDmspB8vmHO-B08n2NQXieUXaEf41Yw&usqp=CAU" alt="" style="width:100%">
+      <h4>居廉</h4>
+      <p>1828 ~ 1904</p>
+    </div>
+  </div>
+<!-- western -->
+  <div class="column western">
+    <div class="content">
+      <img src="https://4.share.photo.xuite.net/sgirl324/1435d91/10378199/477513402_m.jpg" alt="" style="width:100%">
+      <h4>梵谷</h4>
+      <p>1853 ~ 1890</p>
+    </div>
+  </div>
+  <div class="column western">
+    <div class="content">
+      <img src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/201904/5CA72C6D3F2F21554459757.jpeg" alt="" style="width:100%">
+      <h4>達文西</h4>
+      <p>1452 ~ 1519</p>
+    </div>
+  </div>
+  <div class="column western">
+    <div class="content">
+      <img src="https://i1.kknews.cc/SIG=3a8jgl1/ctp-vzntr/1530155385090998877q8ss.jpg" alt="" style="width:100%">
+      <h4>  米開朗基羅</h4>
+      <p>1475 ~ 1564</p>
+    </div>
+  </div>
+<!-- END GRID -->
+  </div>
+  
+  <h1>相關影片</h1>
+  <hr/>
+  <div class="videoContainer">
+    <div id="ytplayer1" class="ytplayer" ></div>
+    <div id="ytplayer2" class="ytplayer"></div>
+    <div id="ytplayer3" class="ytplayer"></div>
+    <div id="ytplayer4" class="ytplayer"></div>
+    <div id="ytplayer5" class="ytplayer"></div>
+  </div>
+  <!-- END MAIN -->
+  </div>
+  
+<script type="text/javascript">
+  filterSelection("all")
+  function filterSelection(c){
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++)
+      {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+  }
+
+  function w3AddClass(element, name){
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++)
+      {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+  }
+
+  function w3RemoveClass(element, name){
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++)
+      {
+      while (arr1.indexOf(arr2[i]) > -1)
+        {
+           arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+    element.className = arr1.join(" ");
+  }
+
+
+// Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function()
+    {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+    }
+  // YouTubeAPI
+  var player,player2,player3,player4,player5;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer1', {
+      height: '150',
+      width: '20%',
+      videoId: 'zLpWCv5f1t8'
+    });
+    player2 = new YT.Player('ytplayer2', {
+      height: '150',
+      width: '20%',
+      videoId: 'hViVS0Xt7b4'
+    });
+     player3 = new YT.Player('ytplayer3', {
+      height: '150',
+      width: '20%',
+      videoId: 'WeApVTgIrwc'
+    });
+     player4 = new YT.Player('ytplayer4', {
+      height: '150',
+      width: '20%',
+      videoId: '9gjM0BMJrrc'
+    });
+     player5 = new YT.Player('ytplayer5', {
+      height: '150',
+      width: '20%',
+      videoId: '51MyBoXxqaQ'
+    });
+  }
+  function onPlayerReady(e) {
+    // 為確保瀏覽器上可以自動播放，要把影片調成靜音
+    e.target.mute().playVideo();
+  }
+
+  
+  function onPlayerReady(e) {
+    console.log(e.target.getPlayerState())
+  }
+  function onPlayerStateChange(e) {
+    console.log(e.data)
+  }
+</script>
+
+
+
+</body>
+</html>

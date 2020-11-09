@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <style type="text/css">
+   *,
+*::before,
+*::after{
+          margin: 0;
+          box-sizing: border-box;
+        }
+body{
+      background-image: url("https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color:rgba(0,0,0,0.3);
+      background-attachment: fixed;
+    }
+
+.container{
+            text-align:center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+          }
+.imgContainer{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               flex-wrap: wrap;
+             }
+.panel{
+        margin: 10px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+  
+}
+.crd{
+      margin: 1rem;
+      position: relative;
+      width: 38rem;
+      height: 25rem;
+      overflow: hidden;
+}
+
+.crd-img, .crd-img2{
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     bottom: 0;
+                   }
+
+.crd-info{
+           color: hsl(0, 0%, 90%);
+           position: absolute;
+           bottom: 40px;
+           left: 30px;
+         }
+
+.crd-heading{
+              font-size: 2rem;
+              letter-spacing: 2px;  
+              opacity: .8;
+              font-weight: 900;
+            }
+
+.crd-text{
+            font-size: 1.6rem;
+            opacity: .6;
+            padding-left: 1rem;
+         }
+
+/* EFFECTS */
+/* ====================================================== */
+
+/* effect-1 */
+.crd--effect-1 .crd-img{
+                          transform: scale(.9);
+                          transition: .4s;
+                       }
+
+.crd--effect-1:hover .crd-img{
+                                transform: scale(1);
+                             }
+
+/* effect-2 */
+.crd--effect-2 .crd-img{
+                          margin: -250px 0 0 -250px;
+                       }
+.crd--effect-2 .crd-info{ 
+                           top: 50%;
+                           left: 50%;
+                           bottom: unset;
+                           text-align: center;
+                           transform: translate(-50%, -50%);
+                        }
+
+.crd--effect-2 .crd-heading{
+                              transform: scale(2);
+                              opacity: 0;
+                              transition: .5s;
+                           }
+
+.crd--effect-2 .crd-text{
+                          padding-left: 0;
+                          transform: scale(1.2);
+                          opacity: 0;
+                          transition: .4s;
+                        }
+
+.crd--effect-2:hover .crd-heading{
+                                    opacity: .8;
+                                    transform: scale(1);
+                                 }
+
+.crd--effect-2:hover .crd-text{
+                                 opacity: .8;
+                                 transform: scale(1);
+                              }
+/* effect-3 */
+.crd--effect-3 .crd-heading{
+                              position: relative;
+                              color: hsla(0, 0%, 90%, .5);
+                           }
+
+.crd--effect-3 .crd-heading span{
+                                   color: hsl(0, 0%, 90%);
+                                   position: absolute;
+                                   right: 0;
+                                   top: 0;
+                                   opacity: 0;
+                                   transform: scale(1.4);
+                                   transition: .5s;
+                                }
+
+.crd--effect-3:hover .crd-heading span{
+                                         opacity: 1;
+                                         transform: scale(1);
+                                      }
+
+.crd--effect-3 .crd-info{
+                           text-align: right;
+                           right: 30px;
+                           left: unset;
+                        }
+
+.crd--effect-3 .crd-text{
+                           padding-left: 0;
+                           padding-right: 1rem;
+                        }
+
+.crd--effect-3 .crd-img{
+                          transition: .5s;
+                       }
+
+.crd--effect-3:hover .crd-img{
+                                transform: scale(.9);
+                             }
+
+
+  </style>
+  
+  <div class="container">
+    <div class="panel">
+      <h1>文藝復興</h1>
+      <p>文藝復興代表了西方和古代（中世紀以前）的古典文化連接，是對阿拉伯人的知識（尤其是數學知識）的吸收。 文藝復興使人們開始專注於現世生活質量（如人文主義）。 文藝復興同時也是知識由於印刷和在藝術、詩歌、建築等領域新技術的應用而導致的知識爆炸。 這些新技術引起了藝術和文學在格式和內容上根本的變化。</p>
+    </div>
+    <div class="imgContainer">
+   <!-- effect-1 -->
+      <div class="crd crd--effect-1">
+
+        <div class="crd-img" style='background-image: url("https://i1.kknews.cc/SIG=l6s119/ctp-vzntr/154106879097647rn47368o.jpg");'></div>
+  
+ 
+  
+        <div class="crd-info">
+    
+          <h2 class="crd-heading">The School Of Atene</h2>
+          <p class="crd-text">1509~1510</p>
+        </div>
+      </div>
+     
+     <!-- effect-2 -->
+      <div class="crd crd--effect-2">
+
+        <div class="crd-img" style='background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/%C3%9Altima_Cena_-_Da_Vinci_5.jpg/1280px-%C3%9Altima_Cena_-_Da_Vinci_5.jpg?1600756212706");'></div>
+
+        <div class="crd-info">
+   
+          <h2 class="crd-heading">l'ultima cena</h2>
+          <p class="crd-text">1494–1498</p>
+        </div>
+
+      </div>
+     <!-- effect-3 -->
+      <div class="crd crd--effect-3">
+
+        <div class="crd-img" style='background-image: url("https://www.ss.net.tw/file/Raphael005/file1.jpg")'></div>
+
+        <div class="crd-info">
+   
+          <h2 class="crd-heading">Portrait of Baldassare Castiglione<span>Portrait of Baldassare Castiglione</span></h2>
+    
+          <p class="crd-text">15th-16th</p>
+        </div>
+
+      </div>
+
+     
+    </div>
+  </div>
+  <div class="container">
+    <div class="panel">
+      <h1>巴洛克時期</h1>
+      <p>巴洛克是 17 世紀風行於歐洲的藝術風格。他們強調激情、運動感和戲劇性，追求光線和色彩的表現，偏愛複雜多變的結構，戲劇性的構圖和形象，起伏靈動，波光流轉。</p>
+    </div>
+    <div class="imgContainer">
+      <div class="crd crd--effect-2">
+
+        <div class="crd-img2" style='background-image: url("https://www.ss.net.tw/file/Caravaggio005/file1.jpg");'></div>
+
+        <div class="crd-info">
+    
+          <h2 class="crd-heading">The Calling of Saint Matthew</h2>
+
+          <p class="crd-text">1599 - 1600 </p>
+        </div>
+
+      </div>
+      <div class="crd crd--effect-3">
+
+        <div class="crd-img2" style='background-image: url("https://www.ss.net.tw/file/Velazquez004/file1.jpg")'></div>
+
+        <div class="crd-info">
+   
+          <h2 class="crd-heading">The Surrender of Breda<span>The Surrender of Breda</span></h2>
+    
+          <p class="crd-text">15th-16th</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>展覽API</title>
+<!--   carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css"></link>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>  
+
+                  <!--impoet CSS-->
+  <link rel="stylesheet" href="Work1.css"> 
+<!--   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+<!-- googlefont -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+</script>
+</head>
+
+<body>
+  
+  
+  
+  
+  
+
+  <header>
+         
+    <section class="header">
+      
+      <ul class="menu">
+   
+        <img src="https://dummyimage.com/100x80/DCDCDC/000.png&text=HomePage"> </img>
+  
+   
+        <li>
+          <a href="#">展覽活動</a>
+        </li>
+        <li>
+          <a href="#">專題報導</a>
+        </li>
+        <li>
+          <a href="#">藝術新聞</a>
+        </li>
+        <li>
+          <a href="#">藝文影音</a>
+        </li>
+        <li>
+          <a href="#/history.html">藝術史</a>
+        </li>
+        <li>
+          <a href="#/artist.html">藝術家</a>
+        </li>
+        <li>
+          <a href="#">藝術聚點</a>
+        </li>
+        <li>
+          <a href="#">線上藝廊</a>
+        </li>
+      </ul>
+    </section>
+  </header>
+<!-- IMG -->
+    
+  <div class="topImg"></div>
+
+
+
+  
+
+
+
+  <hr>
+  <h1>檔期表</h1>
+  <div class="pageTab">
+    <button class="tablinks" onclick="openPage(event, 'pageOne')" id="defaultOpen">1</button>
+    <button class="tablinks" onclick="openPage(event, 'pageTwo')">2</button>
+    <button class="tablinks" onclick="openPage(event, 'pageThree')">3</button>
+  </div>
+
+  <div id="pageOne" class="tabcontent">
+    <div id="Wrapper">
+
+      <div id="contentTitle"><p>日期</p></div>
+      <div id="contentTitle"><p>展覽名稱</p></div>
+      <div id="contentTitle"><p>主辦單位</p></div>
+      <div id="contentTitle"><p>來源網站</p></div> 
+    
+    </div>
+  </div>
+
+  <div id="pageTwo" class="tabcontent">
+    <div id="Wrapper2">
+
+      <div id="contentTitle"><p>日期</p></div>
+      <div id="contentTitle"><p>展覽名稱</p></div>
+      <div id="contentTitle"><p>主辦單位</p></div>
+      <div id="contentTitle"><p>來源網站</p></div>   
+    
+    </div>
+  </div>
+
+  <div id="pageThree" class="tabcontent">
+    <div id="Wrapper3">
+
+      <div id="contentTitle"><p>日期</p></div>
+      <div id="contentTitle"><p>展覽名稱</p></div>
+      <div id="contentTitle"><p>主辦單位</p></div>
+      <div id="contentTitle"><p>來源網站</p></div>  
+    
+    </div>
+  </div>
+
+  <div id="load">
+    <span id="loadAni">↓</span>
+    <span id="loadAni" style="--delay: 0.1s">↓</span>
+    <span id="loadAni"  style="--delay: 0.3s">↓</span>
+    <span id="loadAni"  style="--delay: 0.4s">↓</span>
+    <span id="loadAni"  style="--delay: 0.5s">↓</span>
+  
+  </div>
+
+ 
+
+  <div class="footer">
+    <div id="artUnit"><span>藝文單位<span></div>
+  
+    <div class="owl-carousel owl-theme">
+      <div class="item"><a ><img src="https://pic.pimg.tw/mei30530/1511939619-2567231155_l.jpg" ></a><p>宜蘭縣立蘭陽博物館</p></div>
+      <div class="item"><a ><img src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_2191_6.jpg" ></a><p>國立自然科學博物館</p></div>
+      <div class="item"><a ><img src="https://jatraveling.tw/wp-content/uploads/2018/08/1533372746-032b2cc936860b03048302d991c3498f.jpg" ></a><p>國立國父紀念館</p></div>
+      <div class="item"><a ><img src="https://www.taiwan.net.tw/att/1/big_scenic_spots/pic_A12-00085.jpg" ></a><p>陽明海洋文化藝術館</p></div>
+      <div class="item"><a ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg/250px-%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg" ></a><p>臺中市政府文化局</p></div>
+      <div class="item"><a ><img src="https://pic.easytravel.com.tw/Attachments/15/1536/m/001.JPG" ></a><p>國立臺灣工藝研究發展中心</p></div>
+      <div class="item"><a ><img src="https://images.1111.com.tw/media/share/ac/ac2dd25c467c42beb1918429f79a6ddc.jpg" ></a><p>國史館臺灣文獻館</p></div>
+    
+    </div>
+  </div>
+  
+<hr>
+  <h1>地圖導覽</h1>      
+  <div class="mapSection">
+  
+<!-- 國父紀念館 -->
+    <div id="mapOne" class="mapContent">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.8243180406157!2d121.55805651432381!3d25.040035444204975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe4641f96f0e578a!2z5ZyL56uL5ZyL54i257SA5b-16aSo!5e0!3m2!1szh-TW!2stw!4v1604653334721!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+<!-- 自然科學博物館 -->
+    <div id="mapTwo" class="mapContent">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6122.406671626358!2d120.66489226839076!3d24.15753268202747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d78069134cb%3A0xf7a65bba8f974f36!2z5ZyL56uL6Ieq54S256eR5a245Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1604653455961!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+<!-- 蘭陽博物館 -->
+    <div id="mapThree" class="mapContent">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1809.9303675379217!2d121.83224397310302!3d24.868605613522927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467f772bdf5ed03%3A0x40f18038e3f33286!2z6Jit6Zm95Y2a54mp6aSo!5e0!3m2!1szh-TW!2stw!4v1604653524928!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="tab">
+      <button class="maplinks" onclick="openMap(event, 'mapOne')" id="defaultOpenMap">國父紀念館</button>
+      <button class="maplinks" onclick="openMap(event, 'mapTwo')">自然科學博物館</button>
+      <button class="maplinks" onclick="openMap(event, 'mapThree')">蘭陽博物館</button>
+    </div>
+  </div>
+<hr>
+
+    
+
+    
+      
+  <div class="col1">
+             
+    <p>電話:03-1234567  </p>
+ 
+    <p>傳真:886-1-23456789 </p>
+  
+    <p>E-mail:Exhibition@gmail.com  </p>
+  </div> 
+  <div class="col2">
+      <div class="Rightcontent">
+        <a href="#">服務設施</a>
+        <br>
+
+        <a href="#">聯絡我們</a>
+        <br>
+        <a href="#">相關連結</a>
+      </div> 
+  </div>
+
+   
+  
+  
+
+  
+<script type="text/javascript">
+  function openPage(evt, pageNum) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+    tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+    document.getElementById(pageNum).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  function openMap(evt, mapName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("mapContent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("maplinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+    document.getElementById(mapName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpenMap").click();
+// carousel function
+  $('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+   
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+      0: {
+        items: 1
+         },
+      600: {
+        items: 3
+         },
+      1000: {
+        items: 5
+         }
+    }
+  })
+
+
+  $.ajax({
+    async: true,
+
+ 
+
+    type : 'POST' ,
+    url : 'https://cloud.culture.tw/frontsite/trans/SearchShowAction.do?method=doFindTypeJ&category=6',
+    data : {},
+
+  
+  
+
+
+    success: function (data) {
+   
+      jQuery("#load").hide();
+    
+  
+      for(i = 1; i < 30; i++) {
+        var out = "";
+        var newline = "\r\n";
+        var i;
+        const app = document.getElementById('Wrapper');
+        const app2 = document.getElementById('Wrapper2');
+        const app3 = document.getElementById('Wrapper3');
+        const title = document.createElement('div');
+          title.setAttribute('id', 'titles')
+        const location = document.createElement('div');
+          location.setAttribute('id', 'masterUnit')
+        const time = document.createElement('div');
+          time.setAttribute('id', 'date')
+        const web = document.createElement('div');
+          web.setAttribute('id', 'webs')
+ 
+        title.textContent =data[i].title
+ 
+        location.textContent =data[i].masterUnit
+  
+        time.textContent =data[i].startDate+"~"+data[i].endDate 
+    
+   
+        web.textContent =data[i].sourceWebPromote
+    
+        app.appendChild(time);
+        app.appendChild(title);
+        app.appendChild(location);
+        app.appendChild(web);
+  
+
+  }
+      for(i = 30; i < 60; i++) {
+        var out = "";
+        var newline = "\r\n";
+        var i;
+  
+        const app = document.getElementById('Wrapper');
+        const app2 = document.getElementById('Wrapper2');
+        const app3 = document.getElementById('Wrapper3');
+        const title = document.createElement('div');
+          title.setAttribute('id', 'titles')
+        const location = document.createElement('div');
+          location.setAttribute('id', 'masterUnit')
+        const time = document.createElement('div');
+          time.setAttribute('id', 'date')
+        const web = document.createElement('div');
+          web.setAttribute('id', 'webs')
+
+    
+        title.textContent =data[i].title
+ 
+    
+        location.textContent =data[i].masterUnit
+    
+   
+        time.textContent =data[i].startDate+"~"+data[i].endDate 
+    
+   
+        web.textContent =data[i].sourceWebPromote
+    
+        app2.appendChild(time);
+        app2.appendChild(title);
+        app2.appendChild(location);
+        app2.appendChild(web);
+  
+
+  }
+      for(i = 60; i < 90; i++) {
+        var out = "";
+        var newline = "\r\n";
+        var i;
+  
+        const app = document.getElementById('Wrapper');
+        const app2 = document.getElementById('Wrapper2');
+        const app3 = document.getElementById('Wrapper3');
+        const title = document.createElement('div');
+   title.setAttribute('id', 'titles')
+ const location = document.createElement('div');
+     location.setAttribute('id', 'masterUnit')
+const time = document.createElement('div');
+     time.setAttribute('id', 'date')
+ const web = document.createElement('div');
+     web.setAttribute('id', 'webs')
+
+    title.textContent =data[i].title
+ 
+    location.textContent =data[i].masterUnit
+  
+    time.textContent =data[i].startDate+"~"+data[i].endDate 
+  
+    web.textContent =data[i].sourceWebPromote
+    
+    app3.appendChild(time);
+    app3.appendChild(title);
+    app3.appendChild(location);
+    app3.appendChild(web);
+  
+
+  }
+    
+}
+});
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
