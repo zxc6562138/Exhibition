@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- 避免網頁因裝置螢幕變小而自動扭曲網頁 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>展覽API</title>
 <!--   carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
@@ -11,7 +13,7 @@
 
                   <!--impoet CSS-->
   <link rel="stylesheet" href="Work1.css"> 
-<!--   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->
+
 <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
 </script>
@@ -46,7 +48,7 @@
           <a href="#">藝文影音</a>
         </li>
         <li>
-          <a href="#/history.html">藝術史</a>
+          <a href="#/history.html" target="_blank">藝術史</a>
         </li>
         <li>
           <a href="#/artist.html">藝術家</a>
@@ -71,55 +73,56 @@
 
 
   <hr>
-  <h1>檔期表</h1>
-  <div class="pageTab">
-    <button class="tablinks" onclick="openPage(event, 'pageOne')" id="defaultOpen">1</button>
-    <button class="tablinks" onclick="openPage(event, 'pageTwo')">2</button>
-    <button class="tablinks" onclick="openPage(event, 'pageThree')">3</button>
+  <div class="scheduleContainer">
+  <h1 class="schedule">檔期表</h1>
+    <div class="pageTab">
+      <button class="tablinks" onclick="openPage(event, 'pageOne')" id="defaultOpen">1</button>
+      <button class="tablinks" onclick="openPage(event, 'pageTwo')">2</button>
+      <button class="tablinks" onclick="openPage(event, 'pageThree')">3</button>
   </div>
 
-  <div id="pageOne" class="tabcontent">
-    <div id="Wrapper">
+    <div id="pageOne" class="tabcontent">
+      <div id="Wrapper">
 
-      <div id="contentTitle"><p>日期</p></div>
-      <div id="contentTitle"><p>展覽名稱</p></div>
-      <div id="contentTitle"><p>主辦單位</p></div>
-      <div id="contentTitle"><p>來源網站</p></div> 
+        <div id="contentTitle"><p>日期</p></div>
+        <div id="contentTitle"><p>展覽名稱</p></div>
+        <div id="contentTitle"><p>主辦單位</p></div>
+        <div id="contentTitle"><p>來源網站</p></div> 
     
+      </div>
     </div>
-  </div>
 
-  <div id="pageTwo" class="tabcontent">
-    <div id="Wrapper2">
+    <div id="pageTwo" class="tabcontent">
+      <div id="Wrapper2">
 
-      <div id="contentTitle"><p>日期</p></div>
-      <div id="contentTitle"><p>展覽名稱</p></div>
-      <div id="contentTitle"><p>主辦單位</p></div>
-      <div id="contentTitle"><p>來源網站</p></div>   
+        <div id="contentTitle"><p>日期</p></div>
+        <div id="contentTitle"><p>展覽名稱</p></div>
+        <div id="contentTitle"><p>主辦單位</p></div>
+        <div id="contentTitle"><p>來源網站</p></div>   
     
+      </div>
     </div>
-  </div>
 
-  <div id="pageThree" class="tabcontent">
-    <div id="Wrapper3">
+    <div id="pageThree" class="tabcontent">
+      <div id="Wrapper3">
 
-      <div id="contentTitle"><p>日期</p></div>
-      <div id="contentTitle"><p>展覽名稱</p></div>
-      <div id="contentTitle"><p>主辦單位</p></div>
-      <div id="contentTitle"><p>來源網站</p></div>  
+        <div id="contentTitle"><p>日期</p></div>
+        <div id="contentTitle"><p>展覽名稱</p></div>
+        <div id="contentTitle"><p>主辦單位</p></div>
+        <div id="contentTitle"><p>來源網站</p></div>  
     
+      </div>
     </div>
-  </div>
 
-  <div id="load">
-    <span id="loadAni">↓</span>
-    <span id="loadAni" style="--delay: 0.1s">↓</span>
-    <span id="loadAni"  style="--delay: 0.3s">↓</span>
-    <span id="loadAni"  style="--delay: 0.4s">↓</span>
-    <span id="loadAni"  style="--delay: 0.5s">↓</span>
+    <div id="load">
+      <span id="loadAni">↓</span>
+      <span id="loadAni" style="--delay: 0.1s">↓</span>
+      <span id="loadAni"  style="--delay: 0.3s">↓</span>
+      <span id="loadAni"  style="--delay: 0.4s">↓</span>
+      <span id="loadAni"  style="--delay: 0.5s">↓</span>
   
+    </div>
   </div>
-
  
 
   <div class="footer">
