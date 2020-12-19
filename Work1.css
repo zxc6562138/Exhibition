@@ -168,20 +168,20 @@ header{
 }
 
 
-#date{
+.date{
   border-bottom:solid 1px #A6A5A4;
 }
-#titles{
+.titles{
   border-bottom:solid 1px #A6A5A4;
 }
-#masterUnit{
+.masterUnit{
   border-bottom:solid 1px #A6A5A4;
 }
-#webs{
+.webs{
   border-bottom:solid 1px #A6A5A4;
 }
 
-#contentTitle p:nth-child(odd){
+.contentTitle p:nth-child(odd){
   background: #ddd;
 }
 

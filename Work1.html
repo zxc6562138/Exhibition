@@ -84,10 +84,10 @@
     <div id="pageOne" class="tabcontent">
       <div id="Wrapper">
 
-        <div id="contentTitle"><p>日期</p></div>
-        <div id="contentTitle"><p>展覽名稱</p></div>
-        <div id="contentTitle"><p>主辦單位</p></div>
-        <div id="contentTitle"><p>來源網站</p></div> 
+        <div class="contentTitle"><p>日期</p></div>
+        <div class="contentTitle"><p>展覽名稱</p></div>
+        <div class="contentTitle"><p>主辦單位</p></div>
+        <div class="contentTitle"><p>來源網站</p></div> 
     
       </div>
     </div>
@@ -95,10 +95,10 @@
     <div id="pageTwo" class="tabcontent">
       <div id="Wrapper2">
 
-        <div id="contentTitle"><p>日期</p></div>
-        <div id="contentTitle"><p>展覽名稱</p></div>
-        <div id="contentTitle"><p>主辦單位</p></div>
-        <div id="contentTitle"><p>來源網站</p></div>   
+        <div class="contentTitle"><p>日期</p></div>
+        <div class="contentTitle"><p>展覽名稱</p></div>
+        <div class="contentTitle"><p>主辦單位</p></div>
+        <div class="contentTitle"><p>來源網站</p></div>   
     
       </div>
     </div>
@@ -106,10 +106,10 @@
     <div id="pageThree" class="tabcontent">
       <div id="Wrapper3">
 
-        <div id="contentTitle"><p>日期</p></div>
-        <div id="contentTitle"><p>展覽名稱</p></div>
-        <div id="contentTitle"><p>主辦單位</p></div>
-        <div id="contentTitle"><p>來源網站</p></div>  
+        <div class="contentTitle"><p>日期</p></div>
+        <div class="contentTitle"><p>展覽名稱</p></div>
+        <div class="contentTitle"><p>主辦單位</p></div>
+        <div class="contentTitle"><p>來源網站</p></div>  
     
       </div>
     </div>
@@ -188,10 +188,6 @@
   </div>
 
    
-  
-  
-
-  
 <script type="text/javascript">
   function openPage(evt, pageNum) {
     var i, tabcontent, tablinks;
@@ -264,7 +260,7 @@
       jQuery("#load").hide();
     
   
-      for(i = 1; i < 30; i++) {
+      for(i = 1; i <= 90; i++) {
         var out = "";
         var newline = "\r\n";
         var i;
@@ -272,98 +268,39 @@
         const app2 = document.getElementById('Wrapper2');
         const app3 = document.getElementById('Wrapper3');
         const title = document.createElement('div');
-          title.setAttribute('id', 'titles')
+          title.setAttribute('class', 'titles')
         const location = document.createElement('div');
-          location.setAttribute('id', 'masterUnit')
+          location.setAttribute('class', 'masterUnit')
         const time = document.createElement('div');
-          time.setAttribute('id', 'date')
+          time.setAttribute('class', 'date')
         const web = document.createElement('div');
-          web.setAttribute('id', 'webs')
+          web.setAttribute('class', 'webs')
  
-        title.textContent =data[i].title
- 
-        location.textContent =data[i].masterUnit
-  
+        title.textContent =data[i].title 
+        location.textContent =data[i].masterUnit  
         time.textContent =data[i].startDate+"~"+data[i].endDate 
-    
-   
         web.textContent =data[i].sourceWebPromote
     
         app.appendChild(time);
         app.appendChild(title);
         app.appendChild(location);
         app.appendChild(web);
-  
-
+  if(i>=30 && i<=60){
+    app2.appendChild(time);
+    app2.appendChild(title);
+    app2.appendChild(location);
+    app2.appendChild(web);
   }
-      for(i = 30; i < 60; i++) {
-        var out = "";
-        var newline = "\r\n";
-        var i;
-  
-        const app = document.getElementById('Wrapper');
-        const app2 = document.getElementById('Wrapper2');
-        const app3 = document.getElementById('Wrapper3');
-        const title = document.createElement('div');
-          title.setAttribute('id', 'titles')
-        const location = document.createElement('div');
-          location.setAttribute('id', 'masterUnit')
-        const time = document.createElement('div');
-          time.setAttribute('id', 'date')
-        const web = document.createElement('div');
-          web.setAttribute('id', 'webs')
-
-    
-        title.textContent =data[i].title
- 
-    
-        location.textContent =data[i].masterUnit
-    
-   
-        time.textContent =data[i].startDate+"~"+data[i].endDate 
-    
-   
-        web.textContent =data[i].sourceWebPromote
-    
-        app2.appendChild(time);
-        app2.appendChild(title);
-        app2.appendChild(location);
-        app2.appendChild(web);
-  
-
-  }
-      for(i = 60; i < 90; i++) {
-        var out = "";
-        var newline = "\r\n";
-        var i;
-  
-        const app = document.getElementById('Wrapper');
-        const app2 = document.getElementById('Wrapper2');
-        const app3 = document.getElementById('Wrapper3');
-        const title = document.createElement('div');
-   title.setAttribute('id', 'titles')
- const location = document.createElement('div');
-     location.setAttribute('id', 'masterUnit')
-const time = document.createElement('div');
-     time.setAttribute('id', 'date')
- const web = document.createElement('div');
-     web.setAttribute('id', 'webs')
-
-    title.textContent =data[i].title
- 
-    location.textContent =data[i].masterUnit
-  
-    time.textContent =data[i].startDate+"~"+data[i].endDate 
-  
-    web.textContent =data[i].sourceWebPromote
-    
+  else if(i>60 && i<=90){
     app3.appendChild(time);
     app3.appendChild(title);
     app3.appendChild(location);
     app3.appendChild(web);
+  }
   
 
   }
+     
     
 }
 });
@@ -380,11 +317,12 @@ const time = document.createElement('div');
 
 
 
-
-
-
-
+    
 </script>
+  
+
+  
+
 
 </body>
 </html>
