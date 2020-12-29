@@ -13,10 +13,12 @@
 
                   <!--impoet CSS-->
   <link rel="stylesheet" href="Work1.css"> 
-
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 <!-- googlefont -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
 </script>
+
 </head>
 
 <body>
@@ -29,12 +31,14 @@
   <header>
          
     <section class="header">
-      
+      <img src="https://dummyimage.com/100x80/DCDCDC/000.png&text=HomePage"> </img>     
       <ul class="menu">
-   
-        <img src="https://dummyimage.com/100x80/DCDCDC/000.png&text=HomePage"> </img>
-  
-   
+        <a href="javascript:void(0);"  onclick="myFunction()">
+          <!-- Hamburger menu  --> 
+          <i class=" fas fa-bars fa-2x"></i>
+        </a>
+           
+          
         <li>
           <a href="#">展覽活動</a>
         </li>
@@ -61,10 +65,22 @@
         </li>
       </ul>
     </section>
+    <!-- RWD Menu -->
+  <div class="rwd-topnav">          
+                
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    
+  </div>  
   </header>
+  
+  
 <!-- IMG -->
     
   <div class="topImg"></div>
+  
+  
 
 
 
@@ -189,6 +205,16 @@
 
    
 <script type="text/javascript">
+  /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementsByClassName("rwd-topnav");
+  if (x[0].style.display === "block") {
+    x[0].style.display = "none";
+  } else {
+    x[0].style.display = "block";
+  }
+}
+  
   function openPage(evt, pageNum) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
